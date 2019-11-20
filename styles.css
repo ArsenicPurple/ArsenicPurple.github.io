@@ -2,7 +2,12 @@ body {
   margin: 0px;
 }
 
-.title {
+.title-bar {
+  text-align: center;
+}
+
+#title {
   text-align: center;
   color: #404992;
+  font-family: verdana;
 }

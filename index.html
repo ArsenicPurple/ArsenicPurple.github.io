@@ -1,6 +1,14 @@
 <html>
+<head>
+  <title>Ishanify your Text</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 <body>
-    <input type="text" id="userInput">give me input</input>
+  <div id="title">
+  <h1>Welcome to Text-Ishanify.com</h1>
+  <p>home to all your Ishanifying needs</p>
+</div>
+    <input type="text" id="userInput"></input>
     <button id="submitter">Submit</button>
     <div id="output"></div>
     <script>
@@ -12,14 +20,14 @@
 
         setInterval(function(){
             // this is the closest you get to an infinite loop in JavaScript
-            if( didClickIt ) {
+            if ( didClickIt ) {
                 didClickIt = false;
                 // document.write causes silly problems, do this instead (or better yet, use a library like jQuery to do this stuff for you)
-                var o=document.getElementById("output"),v=document.getElementById("userInput").value;
-                if(o.textContent!==undefined){
-                    o.textContent=v;
-                }else{
-                    o.innerText=v;
+                var o = document.getElementById("output"), v = document.getElementById("userInput").value;
+                if (o.textContent !== undefined){
+                    o.textContent = v;
+                } else {
+                    o.innerText = v;
                 }
             }
         },500);

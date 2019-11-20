@@ -9,11 +9,9 @@
   <p class="title">home to all your Ishanifying needs</p>
 </div>
 
-<div id="center-container">
-    <input class="center" type="text" id="userInput"></input>
-    <button class="center" id="submitter">Submit</button>
-    <div class="center" id="output"></div>
-</div>
+    <input type="text" id="userInput"></input>
+    <button id="submitter">Submit</button>
+    <div id="output"></div>
     <script>
         var submitted = false;
         document.getElementById("submitter").addEventListener("click", function(){
@@ -32,7 +30,7 @@
                     o.innerText = v;
                 }
             }
-        },500);
+        }, 500);
     </script>
 </body>
 </html>

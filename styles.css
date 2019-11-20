@@ -11,3 +11,11 @@ body {
   color: #404992;
   font-family: verdana;
 }
+
+.center-container {
+  text-align: center;
+}
+
+#center {
+  display: inline-block;
+}

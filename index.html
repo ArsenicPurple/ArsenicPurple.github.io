@@ -14,10 +14,6 @@
     <button id="submitter">Submit</button>
     <div id="output"></div>
     <script>
-
-    var Filter = require('bad-words');
-        filter = new Filter({ placeHolder: 'anti-ishan'});
-
         var submitted = false;
         var IshanifiedText = "";
         document.getElementById("submitter").addEventListener("click", function(){
@@ -30,7 +26,7 @@
                 submitted = false;
                 // document.write causes silly problems, do this instead (or better yet, use a library like jQuery to do this stuff for you)
                 var o = document.getElementById("output"), v = document.getElementById("userInput").value;
-                
+
                 //Ishanifying Method
                   var charArray = v.split('');
                   var spaces = true;

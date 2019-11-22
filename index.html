@@ -14,20 +14,37 @@
     <div id="output"></div>
     <script>
         var submitted = false;
+        var IshanifiedText = "";
         document.getElementById("submitter").addEventListener("click", function(){
             submitted = true;
         });
 
-        setInterval(function(){
+        setInterval(function() {
             // this is the closest you get to an infinite loop in JavaScript
             if ( submitted ) {
                 submitted = false;
                 // document.write causes silly problems, do this instead (or better yet, use a library like jQuery to do this stuff for you)
                 var o = document.getElementById("output"), v = document.getElementById("userInput").value;
-                if (o.textContent !== undefined){
-                    o.textContent = v;
+
+                //Ishanifying Method
+                  var charArray = v.split('');
+                  var spaces = true;
+                  while (spaces) {
+                    var spaceIndex = v.indexOf(" ");
+
+                    if (spaceIndex == -1) {
+                      spaces = false;
+                    } else {
+                    charArray[spaceIndex] = "DAD";
+                    }
+                  }
+
+                var IshanifiedText = v.substring();
+                
+                if (o.textContent !== undefined) {
+                    o.textContent = charArray.join("");
                 } else {
-                    o.innerText = v;
+                    o.innerText = charArray.join("");
                 }
             }
         }, 500);

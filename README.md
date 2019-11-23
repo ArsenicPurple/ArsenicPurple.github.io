@@ -1,2 +1,5 @@
 # ArsenicPurple.github.io
-hello
+
+## To do
+- [x] Bootstrap Ishan
+- [x] DAD better
